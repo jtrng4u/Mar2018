@@ -8,7 +8,11 @@ public class CustomerService {
 	}
 	
 	public boolean isElegible(Customer customer) {
-		return customer.getSalary() > 1000;
+		return customer.getSalary() > 3000;
+	}
+	
+	public boolean doSomething(Customer customer) {
+		return customer.getSalary() > 3000;
 	}
 	
 	public boolean doOther(Customer customer) {
