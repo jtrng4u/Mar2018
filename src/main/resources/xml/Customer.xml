@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Customer xmlns:tns="http://trng.imcs.org/xsd/customer-1.0.0" xmlns:tns1="http://trng.imcs.org/xsd/Employee-1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://trng.imcs.org/xsd/customer-1.0.0 ../xsd/customer.xsd ">
+  <tns:id>123</tns:id>
+  <tns:name>Raj</tns:name>
+  <tns:salary>12000</tns:salary>
+  <tns:address>
+    <tns1:streetNo>12345</tns1:streetNo>
+    <tns1:streetName>MacA</tns1:streetName>
+    <tns1:zipcode>45563</tns1:zipcode>
+  </tns:address>
+  <tns:type>SHORT</tns:type>
+  <tns:phone>234-546-4356</tns:phone>
+  <tns:phone>234-546-7879</tns:phone>
+</tns:Customer>

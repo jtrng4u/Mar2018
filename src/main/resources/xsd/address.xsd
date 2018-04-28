@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://trng.imcs.org/xsd/Employee-1.0.0"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://trng.imcs.org/xsd/Employee-1.0.0">
+
+	<complexType name="Address">
+		<sequence>
+			<element name="streetNo" type="string"></element>
+			<element name="streetName" type="string"></element>
+			<element name="zipcode" type="string"></element>
+		</sequence>
+	</complexType>
+    <element name="Address" type="tns:Address"></element>
+</schema>

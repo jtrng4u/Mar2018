@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://trng.imcs.org/xsd/customer-1.0.0"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://trng.imcs.org/xsd/customer-1.0.0"
+	xmlns:pref="http://trng.imcs.org/xsd/Employee-1.0.0">
+
+    <import schemaLocation="address.xsd" namespace="http://trng.imcs.org/xsd/Employee-1.0.0"></import>
+    <complexType name="Customer">
+		<sequence>
+			<element name="id" type="int"></element>
+			<element name="name" type="string"></element>
+			<element name="salary">
+				<simpleType>
+					<restriction base="float">
+						<minExclusive value="1000"></minExclusive>
+						<maxExclusive value="20000"></maxExclusive>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="type">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="SHORT"></enumeration>
+						<enumeration value="LONG"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="phone" type="string" maxOccurs="unbounded"
+				minOccurs="1">
+			</element>
+			<element name="address" type="pref:Address" minOccurs="0" maxOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+
+
+    <element name="Customer" type="tns:Customer"></element>
+</schema>
